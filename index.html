@@ -1,299 +1,609 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-<style type="text/css">
-	::placeholder { 
-		  color: #0275d8!important;
-		  font-weight: bold;
-		  opacity: 1;
-		}
-		.card:hover  {
-		   top:-20px;
-		   opacity: 0.8;
-		   transition: all 2s ease;
-		}
-		.card-text {
-	     height: 150px;
-	     overflow: hidden;
-	     width: auto;
-	     margin: auto;
-	}
-		.tagline{
-	     height: 50px;
-	     overflow: hidden;
-	     width: auto;
-	     margin: auto;
-	}
-</style>
-
-    <title>MyBlog</title>
-    
-  </head>
-  <body >      
-  	<nav class="navbar navbar-expand-lg shadow sticky-top navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><span class="text-light mr-2"><img src="mb_logo.jpg" class="rounded-circle " style="width: 50px; height: 50px;">MyBlog</span></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse bg-green" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <button class="btn btn-success text-dark mr-3 my-2">Home</button>
-      </li>
-      <li class="nav-item">
-        <button class="btn btn-success text-dark mr-3 my-2">About Us</button>
-      </li>
-      <li class="nav-item">
-        <button class="btn btn-success text-dark mr-3 my-2">Contact Us</button>
-      </li>
-      
-    </ul>
-    <button class="btn btn-success text-dark mr-3 ml-6">Login</button>
-    <button class="btn btn-success text-dark mr-3">Register</button>
-    <ul class="navbar-nav">
-      <li class="nav-item dropdown">
-         <div class="btn-group shadow mr-0 my-1 btn btn-success p-0" style="border-bottom-right-radius:50%; border-top-right-radius:50%;" >
-              <h5 class="text-dark mt-2">@Jay</h5>
-              <img src="avatar.jpg" class="btn btn-success dropdown-toggle dropdown-toggle-split p-1" data-toggle="dropdown"  style="width: 50px; height: 50px; border-radius: 50%; border: 1px black solid;"> 
-              <div class="dropdown-menu mr-5 shadow text-white bg-secondary" style=" border: 1px solid black;">
-                  <a href="#" class="dropdown-item text-black">Dashboard</a>
-                  <a href="#" class="dropdown-item text-black">Permissions</a>
-                  <a href="#" class="dropdown-item text-black">Logout</a>
-              </div>
-          </div>
-      </li>
-     </ul> 
-  </div>
-</nav>
-<div class="container">
-<div class=" row mt-4">
-	<div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4 align-items-center w-100" >
-		<div class="card shadow align-items-center" style="width: auto; background: #defff6;">
-		  <img class="card-img-top shadow-lg mb-4 my-2" src="wireframe.jpg" style="width: 50%; height: 150px; border-radius: 50%; " alt="Card image cap">
-		  <div class="card-body shadow mx-1 my-2 p-1" style="border: 1px aqua solid;">
-		    <h5 class="card-title">Wireframes</h5>
-		    <p class="card-text" id="tex1">A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website. Wireframes are created for the purpose of arranging elements to best accomplish a particular purpose.</p>
-		  </div>
-		  <ul class="list-group list-group-flush shadow " style="width: 100%; background: #60f0c8;">
-		    <li class="list-group-item mx-1 my-2 p-1 tagline " style="background: #60f0c8;">Learn More About Wireframes. Click on Read More Button</li>
-		  </ul>
-		  <div class="card-body shadow" style="border-bottom: 1px grey solid; width: 100%;">
-		    <a href="#" class="card-link"><button class="btn btn-primary shadow">Read More</button></a>
-		    <a href="#" class="card-link"><button class="btn btn-primary shadow float-right">Comments</button></a>
-		  </div>
-		  <div class="card-body shadow" style="background: #60f0c8; width: 100%;">
-		    <img class="card-img-top mr-5 shadow" src="avatar.jpg" style="width: 50px; float: left; height: 50px; border-radius: 50%; " alt="Card image cap">
-		    <div class="float-right">
-		    	<a href="#" class="card-link float-right mr-5">by Jaykumar Bamania</a><br>
-		    	<small class="text-muted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Posted 1 day ago</small>
-		    	<a class="activator ml-4"><i class="fas fa-share-alt" style="font:20px;"></i></a>
-		    </div>
-		  </div>
-		</div>
-	</div>
-
-	<div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4 align-items-center w-100" >
-		<div class="card shadow align-items-center" style="width: auto; background: #defff6;">
-		  <img class="card-img-top shadow-lg mb-4 my-2" src="reactjs.jpg" style="width: 50%; height: 150px; border-radius: 50%; " alt="Card image cap">
-		  <div class="card-body shadow mx-1 my-2 p-1" style="border: 1px aqua solid;">
-		    <h5 class="card-title">ReactJS</h5>
-		    <p class="card-text" id="text2">React is an open-source JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.</p>
-		  </div>
-		  <ul class="list-group list-group-flush shadow " style="width: 100%; background: #60f0c8;">
-		    <li class="list-group-item mx-1 my-2 p-1 tagline" style="background: #60f0c8;">Explore ReactJS. Click on Read More Button</li>
-		  </ul>
-		  <div class="card-body shadow" style="border-bottom: 1px grey solid; width: 100%;">
-		    <a href="#" class="card-link"><button class="btn btn-primary shadow">Read More</button></a>
-		    <a href="#" class="card-link"><button class="btn btn-primary shadow float-right">Comments</button></a>
-		  </div>
-		  <div class="card-body shadow" style="background: #60f0c8; width: 100%;">
-		    <img class="card-img-top mr-5 shadow" src="avatar.jpg" style="width: 50px; float: left; height: 50px; border-radius: 50%; " alt="Card image cap">
-		    <div class="float-right">
-		    	<a href="#" class="card-link float-right mr-5">by Jaykumar Bamania</a><br>
-		    	<small class="text-muted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Posted 1 day ago</small>
-		    	<a class="activator ml-4"><i class="fas fa-share-alt" style="font:20px;"></i></a>
-		    </div>
-		  </div>
-		</div>
-	</div>
-	<div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4 align-items-center w-100" >
-		<div class="card shadow align-items-center" style="width: auto; background: #defff6;">
-		  <img class="card-img-top shadow-lg mb-4 my-2" src="flask.jpg" style="width: 50%; height: 150px; border-radius: 50%; " alt="Card image cap">
-		  <div class="card-body shadow mx-1 my-2 p-1" style="border: 1px aqua solid;">
-		    <h5 class="card-title">Flask</h5>
-		    <p class="card-text" id="text4">Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.</p>
-		  </div>
-		  <ul class="list-group list-group-flush shadow " style="width: 100%; background: #60f0c8;">
-		    <li class="list-group-item mx-1 my-2 p-1 tagline" style="background: #60f0c8;">Explore Flask. Click on Read More Button</li>
-		  </ul>
-		  <div class="card-body shadow" style="border-bottom: 1px grey solid; width: 100%;">
-		    <a href="#" class="card-link"><button class="btn btn-primary shadow">Read More</button></a>
-		    <a href="#" class="card-link"><button class="btn btn-primary shadow float-right">Comments</button></a>
-		  </div>
-		  <div class="card-body shadow" style="background: #60f0c8; width: 100%;">
-		    <img class="card-img-top mr-5 shadow" src="avatar.jpg" style="width: 50px; float: left; height: 50px; border-radius: 50%; " alt="Card image cap">
-		    <div class="float-right">
-		    	<a href="#" class="card-link float-right mr-5">by Jaykumar Bamania</a><br>
-		    	<small class="text-muted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Posted 1 day ago</small>
-		    	<a class="activator ml-4"><i class="fas fa-share-alt" style="font:20px;"></i></a>
-		    </div>
-		  </div>
-		</div>	
-	</div>
-</div>
-</div>
-
-	<footer class="page-footer font-small bg-light text-primary pt-4 shadow-lg mt-3">
-
-	  <div class="container text-center text-md-left">
-
-	    <div class="row">
-
-	      <div class="col-md-4 mx-2">
-	        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Subscribe to MyBlog</h5>
-	        <p>For Amazing Blog Post to see all kind of Categories and make yourself up-to-date</p>
-	        <div class="input-group mt-5 mb-3">
-			  <input type="text" class="form-control text-primary" placeholder="Email Address" aria-label="Email Address" aria-describedby="email-button">
-			  <div class="input-group-append">
-			    <span class="input-group-text bg-primary text-white" id="email-button">Subscribe</span>
-			  </div>
-			</div>
-	      </div>
-
-	      <hr class="clearfix w-100 d-md-none">
-
-	      <div class="col-md-2 mx-auto">
-	        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Creator</h5>
-	        <ul class="list-unstyled">
-	          <li class="mb-3">
-	            <a href="#!">942632109</a>
-	          </li>
-	          <li class="mb-3">
-	            <a href="#!">jaykumardiu@gmail.com</a>
-	          </li>
-	          <li class="mb-3">
-	            <a href="#!">FIND AN ADDRESS</a>
-	          </li>
-	        </ul>
-	      </div>
-
-	      <hr class="clearfix w-100 d-md-none">
-
-	      <div class="col-md-2 mx-auto">
-	        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact Us</h5>
-	        <ul class="list-unstyled text-uppercase ">
-	          <li class="mb-3">
-	            <a href="#!">Categories</a>
-	          </li>
-	          <li class="mb-3">
-	            <a href="#!">Watch Later</a>
-	          </li>
-	          <li class="mb-3">
-	            <a href="#!">Saved</a>
-	          </li>
-	          <li class="mb-3">
-	            <a href="#!">Downloads</a>
-	          </li>
-	          <li class="mb-3">
-	            <a href="#!">Know More</a>
-	          </li>
-	        </ul>
-
-	      </div>
-
-	      <hr class="clearfix w-100 d-md-none">
-
-	      <div class="col-md-2 mx-auto">
-	        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About MyBlog</h5>
-	        <ul class="list-unstyled">
-	          <li class="mb-3" style="font: 22px  bold;">
-	            <a href="#!">Work With Us</a>
-	          </li>
-	          <li class="mb-3" style="font: 22px  bold;">
-	            <a href="#!">Privacy Policy</a>
-	          </li>
-	          <li class="mb-3" style="font: 22px  bold;">
-	            <a href="#!">Terms & Conditions</a>
-	          </li>
-	          <li class="mb-3" style="font: 22px  bold;">
-	            <a href="#!">Press Enquiries</a>
-	          </li>
-	        </ul>
-	      </div>
-	    </div>
-	  </div>  
-
-	  <div class="bg-dark">
-	  <ul class="list-unstyled list-inline text-center py-2 ">
-	    <li  class="list-inline-item">
-	      <h5 class="mb-1">Register for free</h5>
-	    </li>
-	    <li class="list-inline-item">
-	      <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
-	    </li>
-	  </ul>
-	 <hr>
-
-	  <ul class="list-unstyled list-inline text-center">
-	    <li class="list-inline-item">
-	      <a class="btn-floating btn-fb mx-1">
-	        <i class="fab fa-facebook-f"> </i>
-	      </a>
-	    </li>
-	    <li class="list-inline-item">
-	      <a class="btn-floating btn-tw mx-1">
-	        <i class="fab fa-twitter"> </i>
-	      </a>
-	    </li>
-	    <li class="list-inline-item">
-	      <a class="btn-floating btn-gplus mx-1">
-	        <i class="fab fa-google-plus-g"> </i>
-	      </a>
-	    </li>
-	    <li class="list-inline-item">
-	      <a class="btn-floating btn-li mx-1">
-	        <i class="fab fa-linkedin-in"> </i>
-	      </a>
-	    </li>
-	    <li class="list-inline-item">
-	      <a class="btn-floating btn-dribbble mx-1">
-	        <i class="fab fa-dribbble"> </i>
-	      </a>
-	    </li>
-	  </ul>
-
-	  <div class="footer-copyright text-center text-success  py-3"><h3>Created By : 
-	    <a href="#" class="text-success">@JayBamania </a></h3>
-	  </div>
-	</div>
-
-	</footer>
-	<script type="text/javascript">
-		
-	// var i;
-	 console.log(document.getElementById('#text1'))
-
-	// console.log(divs)
-	// for(i=0;i<divs.length;i++) {
-	//   if(divs[i].className == 'card-text') {
-	//     divs[i].innerHTML = divs[i].innerHTML.substring(0,150);
-	//   }
-	// }
-	</script>
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-  </body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="index.css">
+      <title>MyBlog</title>  
+   </head>
+   <body >
+      <nav class="navbar navbar-expand-lg shadow sticky-top navbar-dark bg-dark">
+         <a class="navbar-brand" href="#"><span class="text-light mr-2"><img src="mb_logo.jpg" class="rounded-circle " style="width: 50px; height: 50px;">MyBlog</span></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse bg-green" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+               <li class="nav-item active ">
+                  <a href="#home"><button class="btn btn-primary text-light mr-3 my-2"><i class="fa fa-home mr-1 text-white "></i>Home</button></a>
+               </li>
+               <li class="nav-item ">
+                  <a href="#aboutme"><button class="btn btn-primary text-light mr-3 my-2"><i class="fa fa-address-card mr-1 text-white "></i>About</button></a>
+               </li>
+               <li class="nav-item">
+                  <a href="#contact"><button class="btn btn-primary text-light mr-3 my-2"><i class="fa fa-address-book mr-1 text-white "></i>Contact</button></a>
+               </li>
+            </ul>
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a href="#login" class="btn btn-primary text-light my-2 mr-3 ml-6"  data-toggle="modal" onclick="openLoginModal();"><i class="fa fa-sign-in-alt mr-1 text-white "></i> Login</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#register" class="btn btn-primary text-light my-2 mr-3" data-toggle="modal" onclick="openRegisterModal();"><i class="fa fa-user-plus mr-1 text-white "></i>Sign Up</a>
+               </li>
+            </ul>
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <h5 class="text-light mt-2">Jaykumar</h5>
+               </li>
+               <li class="nav-item dropdown">
+                  <div class="btn-group shadow mr-0 my-1 p-0" style="border-bottom-right-radius:50%; border-top-right-radius:50%;" >
+                     <img src="avatar.jpg" class="btn btn-primary dropdown-toggle dropdown-toggle-split p-1" data-toggle="dropdown"  style="width: 50px; height: 50px; border-radius: 50%; border: 1px black solid;"> 
+                     <div class="dropdown-menu shadow  bg-secondary w-auto" style=" border: 1px solid black; margin-left:-100px;">
+                        <a href="#" class="dropdown-item text-black"><i class="fa fa-address-card mr-2 text-dark "></i>Dashboard</a>
+                        <a href="#" class="dropdown-item text-black"><i class="fa fa-user-circle mr-2 text-dark "></i>Profile</a>
+                        <a href="#" class="dropdown-item text-black"><i class="fa fa-cog mr-2 text-dark "></i>Setting</a>
+                        <a href="#" class="dropdown-item text-black"><i class="fa fa-question-circle mr-2 text-dark "></i>Help</a>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="modal fade login" id="loginModal">
+         <div class="modal-dialog login animated">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title float-left">Login with</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               </div>
+               <div class="modal-body">
+                  <div class="box">
+                     <div class="content">
+                        <div class="social">
+                           <!-- <a class="circle github" href="#">
+                              <i class="fa fa-github fa-fw"></i>
+                              </a> -->
+                           <a id="google_login" class="circle google" href="#">
+                           <i class="fab fa-google-plus-g text-white"> </i>
+                           </a>
+                           <a id="facebook_login" class="circle facebook" href="#">
+                           <i class="fab fa-facebook-f rounded-circle text-white"> </i>
+                           </a>
+                        </div>
+                        <div class="division">
+                           <div class="line l"></div>
+                           <span>or</span>
+                           <div class="line r"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="form loginBox">
+                           <form method="" action="" accept-charset="UTF-8">
+                              <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                              <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                              <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="box">
+                     <div class="content registerBox" style="display:none;">
+                        <div class="form">
+                           <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+                              <input id="username" class="form-control mb-1" type="text" placeholder="Username" name="usename">
+                              <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                              <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                              <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                              <input id="phone" class="form-control" type="text" placeholder="Mob. No." name="phone">
+                              <input class="btn btn-default btn-register" type="button" value="Create account" name="commit">
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <div class="forgot login-footer">
+                     <span>Looking to
+                     <a href="javascript: showRegisterForm();">create an account</a>
+                     ?</span>
+                  </div>
+                  <div class="forgot register-footer" style="display:none">
+                     <span>Already have an account?</span>
+                     <a href="javascript: showLoginForm();">Login</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section class="clients shadow pl-3" id="home">
+         <div class="container  text-center">
+            <h1 class="text-info text-center font-weight-bold">Latests Blogs</h1>
+            <p class="text-capitalize pt-1">Coding Section</p>
+         </div>
+         <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+               <li data-target="#demo" data-slide-to="0" class="active"></li>
+               <li data-target="#demo" data-slide-to="1"></li>
+               <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="row">
+                     <div class="col-lg-4 col-4 col-sm-4 col-md-4">
+                        <div class="box">
+                           <div class="card shadow align-items-center" style="width: auto; background: #defff6;">
+                              <img class="card-img-top shadow-lg mb-4 my-2" src="wireframe.jpg" style="width: 50%; height: 150px; border-radius: 50%; " alt="Card image cap">
+                              <div class="card-body shadow mx-1 my-2 p-1" style="border: 1px aqua solid;">
+                                 <h5 class="card-title">Wireframes</h5>
+                                 <p class="card-text" id="tex1">A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website. Wireframes are created for the purpose of arranging elements to best accomplish a particular purpose.</p>
+                              </div>
+                              <ul class="list-group list-group-flush shadow " style="width: 100%; background: #60f0c8;">
+                                 <li class="list-group-item mx-1 my-2 p-1 tagline " style="background: #60f0c8;">Learn More About Wireframes. Click on Read More Button</li>
+                              </ul>
+                              <div class="card-body shadow" style="border-bottom: 1px grey solid; width: 100%;">
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow">Read More</button></a>
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow float-right">Comments</button></a>
+                              </div>
+                              <div class="row card-body shadow" style="background: #60f0c8; width: 100%;">
+                                 <div class="col-3 float-left">
+                                    <img class="card-img-top mr-5 shadow " src="avatar.jpg" style="width: 50px; float: left; height: 50px; border-radius: 50%; " alt="Card image cap">
+                                 </div>
+                                 <div class="float-right col-9">
+                                    <a href="#" class="card-link float-right text-center ">- Jaykumar Bamania</a><br>
+                                    <small class="text-muted">- Posted 1 day ago</small>
+                                    <a class="activator ml-4"><i class="fas fa-share-alt" style="font:20px;"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-4 col-sm-4 col-md-4">
+                        <div class="box">
+                           <div class="card shadow align-items-center" style="width: auto; background: #defff6;">
+                              <img class="card-img-top shadow-lg mb-4 my-2" src="flask.jpg" style="width: 50%; height: 150px; border-radius: 50%; " alt="Card image cap">
+                              <div class="card-body shadow mx-1 my-2 p-1" style="border: 1px aqua solid;">
+                                 <h5 class="card-title">Flask</h5>
+                                 <p class="card-text" id="text4">Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.</p>
+                              </div>
+                              <ul class="list-group list-group-flush shadow " style="width: 100%; background: #60f0c8;">
+                                 <li class="list-group-item mx-1 my-2 p-1 tagline" style="background: #60f0c8;">Explore Flask. Click on Read More Button</li>
+                              </ul>
+                              <div class="card-body shadow" style="border-bottom: 1px grey solid; width: 100%;">
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow">Read More</button></a>
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow float-right">Comments</button></a>
+                              </div>
+                              <div class="row card-body shadow" style="background: #60f0c8; width: 100%;">
+                                 <div class="col-3 float-left">
+                                    <img class="card-img-top mr-5 shadow " src="avatar.jpg" style="width: 50px; float: left; height: 50px; border-radius: 50%; " alt="Card image cap">
+                                 </div>
+                                 <div class="float-right col-9">
+                                    <a href="#" class="card-link float-right text-center ">- Jaykumar Bamania</a><br>
+                                    <small class="text-muted">- Posted 1 day ago</small>
+                                    <a class="activator ml-4"><i class="fas fa-share-alt" style="font:20px;"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-4 col-sm-4 col-md-4">
+                        <div class="box">
+                           <div class="card shadow align-items-center" style="width: auto; background: #defff6;">
+                              <img class="card-img-top shadow-lg mb-4 my-2" src="reactjs.jpg" style="width: 50%; height: 150px; border-radius: 50%; " alt="Card image cap">
+                              <div class="card-body shadow mx-1 my-2 p-1" style="border: 1px aqua solid;">
+                                 <h5 class="card-title">ReactJS</h5>
+                                 <p class="card-text" id="text2">React is an open-source JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.</p>
+                              </div>
+                              <ul class="list-group list-group-flush shadow " style="width: 100%; background: #60f0c8;">
+                                 <li class="list-group-item mx-1 my-2 p-1 tagline" style="background: #60f0c8;">Explore ReactJS. Click on Read More Button</li>
+                              </ul>
+                              <div class="card-body shadow" style="border-bottom: 1px grey solid; width: 100%;">
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow">Read More</button></a>
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow float-right">Comments</button></a>
+                              </div>
+                              <div class="row card-body shadow" style="background: #60f0c8; width: 100%;">
+                                 <div class="col-3 float-left">
+                                    <img class="card-img-top mr-5 shadow " src="avatar.jpg" style="width: 50px; float: left; height: 50px; border-radius: 50%; " alt="Card image cap">
+                                 </div>
+                                 <div class="float-right col-9">
+                                    <a href="#" class="card-link float-right text-center ">- Jaykumar Bamania</a><br>
+                                    <small class="text-muted">- Posted 1 day ago</small>
+                                    <a class="activator ml-4"><i class="fas fa-share-alt" style="font:20px;"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-lg-4 col-4 col-sm-4 col-md-4">
+                        <div class="box">
+                           <div class="card shadow align-items-center" style="width: auto; background: #defff6;">
+                              <img class="card-img-top shadow-lg mb-4 my-2" src="wireframe.jpg" style="width: 50%; height: 150px; border-radius: 50%; " alt="Card image cap">
+                              <div class="card-body shadow mx-1 my-2 p-1" style="border: 1px aqua solid;">
+                                 <h5 class="card-title">Wireframes</h5>
+                                 <p class="card-text" id="tex1">A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website. Wireframes are created for the purpose of arranging elements to best accomplish a particular purpose.</p>
+                              </div>
+                              <ul class="list-group list-group-flush shadow " style="width: 100%; background: #60f0c8;">
+                                 <li class="list-group-item mx-1 my-2 p-1 tagline " style="background: #60f0c8;">Learn More About Wireframes. Click on Read More Button</li>
+                              </ul>
+                              <div class="card-body shadow" style="border-bottom: 1px grey solid; width: 100%;">
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow">Read More</button></a>
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow float-right">Comments</button></a>
+                              </div>
+                              <div class="row card-body shadow" style="background: #60f0c8; width: 100%;">
+                                 <div class="col-3 float-left">
+                                    <img class="card-img-top mr-5 shadow " src="avatar.jpg" style="width: 50px; float: left; height: 50px; border-radius: 50%; " alt="Card image cap">
+                                 </div>
+                                 <div class="float-right col-9">
+                                    <a href="#" class="card-link float-right text-center ">- Jaykumar Bamania</a><br>
+                                    <small class="text-muted">- Posted 1 day ago</small>
+                                    <a class="activator ml-4"><i class="fas fa-share-alt" style="font:20px;"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-4 col-sm-4 col-md-4">
+                        <div class="box">
+                           <div class="card shadow align-items-center" style="width: auto; background: #defff6;">
+                              <img class="card-img-top shadow-lg mb-4 my-2" src="flask.jpg" style="width: 50%; height: 150px; border-radius: 50%; " alt="Card image cap">
+                              <div class="card-body shadow mx-1 my-2 p-1" style="border: 1px aqua solid;">
+                                 <h5 class="card-title">Flask</h5>
+                                 <p class="card-text" id="text4">Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.</p>
+                              </div>
+                              <ul class="list-group list-group-flush shadow " style="width: 100%; background: #60f0c8;">
+                                 <li class="list-group-item mx-1 my-2 p-1 tagline" style="background: #60f0c8;">Explore Flask. Click on Read More Button</li>
+                              </ul>
+                              <div class="card-body shadow" style="border-bottom: 1px grey solid; width: 100%;">
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow">Read More</button></a>
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow float-right">Comments</button></a>
+                              </div>
+                              <div class="row card-body shadow" style="background: #60f0c8; width: 100%;">
+                                 <div class="col-3 float-left">
+                                    <img class="card-img-top mr-5 shadow " src="avatar.jpg" style="width: 50px; float: left; height: 50px; border-radius: 50%; " alt="Card image cap">
+                                 </div>
+                                 <div class="float-right col-9">
+                                    <a href="#" class="card-link float-right text-center ">- Jaykumar Bamania</a><br>
+                                    <small class="text-muted">- Posted 1 day ago</small>
+                                    <a class="activator ml-4"><i class="fas fa-share-alt" style="font:20px;"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-4 col-sm-4 col-md-4">
+                        <div class="box">
+                           <div class="card shadow align-items-center" style="width: auto; background: #defff6;">
+                              <img class="card-img-top shadow-lg mb-4 my-2" src="reactjs.jpg" style="width: 50%; height: 150px; border-radius: 50%; " alt="Card image cap">
+                              <div class="card-body shadow mx-1 my-2 p-1" style="border: 1px aqua solid;">
+                                 <h5 class="card-title">ReactJS</h5>
+                                 <p class="card-text" id="text2">React is an open-source JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.</p>
+                              </div>
+                              <ul class="list-group list-group-flush shadow " style="width: 100%; background: #60f0c8;">
+                                 <li class="list-group-item mx-1 my-2 p-1 tagline" style="background: #60f0c8;">Explore ReactJS. Click on Read More Button</li>
+                              </ul>
+                              <div class="card-body shadow" style="border-bottom: 1px grey solid; width: 100%;">
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow">Read More</button></a>
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow float-right">Comments</button></a>
+                              </div>
+                              <div class="row card-body shadow" style="background: #60f0c8; width: 100%;">
+                                 <div class="col-3 float-left">
+                                    <img class="card-img-top mr-5 shadow " src="avatar.jpg" style="width: 50px; float: left; height: 50px; border-radius: 50%; " alt="Card image cap">
+                                 </div>
+                                 <div class="float-right col-9">
+                                    <a href="#" class="card-link float-right text-center ">- Jaykumar Bamania</a><br>
+                                    <small class="text-muted">- Posted 1 day ago</small>
+                                    <a class="activator ml-4"><i class="fas fa-share-alt" style="font:20px;"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-lg-4 col-4 col-sm-4 col-md-4">
+                        <div class="box">
+                           <div class="card shadow align-items-center" style="width: auto; background: #defff6;">
+                              <img class="card-img-top shadow-lg mb-4 my-2" src="wireframe.jpg" style="width: 50%; height: 150px; border-radius: 50%; " alt="Card image cap">
+                              <div class="card-body shadow mx-1 my-2 p-1" style="border: 1px aqua solid;">
+                                 <h5 class="card-title">Wireframes</h5>
+                                 <p class="card-text" id="tex1">A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website. Wireframes are created for the purpose of arranging elements to best accomplish a particular purpose.</p>
+                              </div>
+                              <ul class="list-group list-group-flush shadow " style="width: 100%; background: #60f0c8;">
+                                 <li class="list-group-item mx-1 my-2 p-1 tagline " style="background: #60f0c8;">Learn More About Wireframes. Click on Read More Button</li>
+                              </ul>
+                              <div class="card-body shadow" style="border-bottom: 1px grey solid; width: 100%;">
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow">Read More</button></a>
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow float-right">Comments</button></a>
+                              </div>
+                              <div class="row card-body shadow" style="background: #60f0c8; width: 100%;">
+                                 <div class="col-3 float-left">
+                                    <img class="card-img-top mr-5 shadow " src="avatar.jpg" style="width: 50px; float: left; height: 50px; border-radius: 50%; " alt="Card image cap">
+                                 </div>
+                                 <div class="float-right col-9">
+                                    <a href="#" class="card-link float-right text-center ">- Jaykumar Bamania</a><br>
+                                    <small class="text-muted">- Posted 1 day ago</small>
+                                    <a class="activator ml-4"><i class="fas fa-share-alt" style="font:20px;"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-4 col-sm-4 col-md-4">
+                        <div class="box">
+                           <div class="card shadow align-items-center" style="width: auto; background: #defff6;">
+                              <img class="card-img-top shadow-lg mb-4 my-2" src="flask.jpg" style="width: 50%; height: 150px; border-radius: 50%; " alt="Card image cap">
+                              <div class="card-body shadow mx-1 my-2 p-1" style="border: 1px aqua solid;">
+                                 <h5 class="card-title">Flask</h5>
+                                 <p class="card-text" id="text4">Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.</p>
+                              </div>
+                              <ul class="list-group list-group-flush shadow " style="width: 100%; background: #60f0c8;">
+                                 <li class="list-group-item mx-1 my-2 p-1 tagline" style="background: #60f0c8;">Explore Flask. Click on Read More Button</li>
+                              </ul>
+                              <div class="card-body shadow" style="border-bottom: 1px grey solid; width: 100%;">
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow">Read More</button></a>
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow float-right">Comments</button></a>
+                              </div>
+                              <div class="row card-body shadow" style="background: #60f0c8; width: 100%;">
+                                 <div class="col-3 float-left">
+                                    <img class="card-img-top mr-5 shadow " src="avatar.jpg" style="width: 50px; float: left; height: 50px; border-radius: 50%; " alt="Card image cap">
+                                 </div>
+                                 <div class="float-right col-9">
+                                    <a href="#" class="card-link float-right text-center ">- Jaykumar Bamania</a><br>
+                                    <small class="text-muted">- Posted 1 day ago</small>
+                                    <a class="activator ml-4"><i class="fas fa-share-alt" style="font:20px;"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-4 col-sm-4 col-md-4">
+                        <div class="box">
+                           <div class="card shadow align-items-center" style="width: auto; background: #defff6;">
+                              <img class="card-img-top shadow-lg mb-4 my-2" src="reactjs.jpg" style="width: 50%; height: 150px; border-radius: 50%; " alt="Card image cap">
+                              <div class="card-body shadow mx-1 my-2 p-1" style="border: 1px aqua solid;">
+                                 <h5 class="card-title">ReactJS</h5>
+                                 <p class="card-text" id="text2">React is an open-source JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.</p>
+                              </div>
+                              <ul class="list-group list-group-flush shadow " style="width: 100%; background: #60f0c8;">
+                                 <li class="list-group-item mx-1 my-2 p-1 tagline" style="background: #60f0c8;">Explore ReactJS. Click on Read More Button</li>
+                              </ul>
+                              <div class="card-body shadow" style="border-bottom: 1px grey solid; width: 100%;">
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow">Read More</button></a>
+                                 <a href="#" class="card-link"><button class="btn btn-primary shadow float-right">Comments</button></a>
+                              </div>
+                              <div class="row card-body shadow" style="background: #60f0c8; width: 100%;">
+                                 <div class="col-3 float-left">
+                                    <img class="card-img-top mr-5 shadow " src="avatar.jpg" style="width: 50px; float: left; height: 50px; border-radius: 50%; " alt="Card image cap">
+                                 </div>
+                                 <div class="float-right col-9">
+                                    <a href="#" class="card-link float-right text-center ">- Jaykumar Bamania</a><br>
+                                    <small class="text-muted">- Posted 1 day ago</small>
+                                    <a class="activator ml-4"><i class="fas fa-share-alt" style="font:20px;"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </a>
+         </div>
+      </section>
+      <section class=" bg-light shadow-lg " id="aboutme" style="margin-top:100px;">
+         <div class="py-5">
+            <h2 class="text-center mt-5">About Me</h2>
+         </div>
+         <div class="container-fluid">
+            <div class="row p-3 pb-5 ">
+               <div class="col-lg-4 col-md-4 col-sm-4 col-12 ">
+                  <img src="avatar.jpg" class="img-fluid aboutimg shadow" >
+               </div>
+               <div class="col-lg-8 col-sm-8 col-md-8 col-12">
+                  <h2 class="display-4 my-1">I am Jaykumar Bamania</h2>
+                  <p class="py-2">Welcome to your MyBlog. This Blog is basically created for you to view every types of content in this blog. My only motive to create this blog is to make you up-to-date and have right information. So if you really like this blog then you can contact me by filling the form give below. Thank You for your Time.</p>
+                  <a href="about.php" class="btn btn-primary"> Check More</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="contact" class="py-5 shadow-lg mb-5 bg-light" style="margin-top:100px;">
+         <div class="container">
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Contact Me</h2>
+            <p class="text-center w-responsive mx-auto mb-5">Write Your Message or Review by filling this form to Contact Me directly</p>
+            <div class="row">
+               <div class="col-md-9 mb-md-0 mb-5">
+                  <div class="row">
+                     <div class="col-md-6 ">
+                        <div class="md-form mb-5 ">
+                           <input type="text" placeholder="Your Name" id="contactname" class="form-control" onkeyup="hidevalidationMsg('error-name')">
+                           <span id="error-name"></span>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="md-form mb-5 ">
+                           <input type="email" placeholder="Your Email" id="contactemail" class="form-control" onkeyup="hidevalidationMsg('error-email')">
+                           <span id="error-email"></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="md-form mb-5 ">
+                           <input type="text" id="contactsubject" onkeyup="hidevalidationMsg('error-subject')" class="form-control" placeholder="Subject">
+                           <span id="error-subject"></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="md-form mb-5">
+                           <textarea type="text" id="contactmessage" placeholder="Your Message" onkeyup="hidevalidationMsg('error-message')" class="form-control md-textarea" rows="3"></textarea>
+                           <span id="error-message"></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text-center text-md-left">
+                     <button class="btn btn-primary btn-md" onclick="validate()" >Send</button>
+                  </div>
+               </div>
+               <div class="col-md-3 text-center">
+                  <ul class="list-unstyled mb-0">
+                     <li>
+                        <i class="fa fa-map-marker fa-2x text-primary"></i>
+                        <p>Diu,India</p>
+                     </li>
+                     <li>
+                        <i class="fa fa-phone fa-2x mt-4 text-primary"></i>
+                        <p>+91 9428332109</p>
+                     </li>
+                     <li>
+                        <i class="fa fa-envelope fa-2x mt-4 text-primary"></i>
+                        <p class="mb-0">jaykumardiu@gmail.com</p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="page-footer font-small bg-light text-primary pt-4 shadow-lg mt-3">
+         <div class="container text-center text-md-left">
+            <div class="row">
+               <div class="col-md-4 mx-2">
+                  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Subscribe to MyBlog</h5>
+                  <p>For Amazing Blog Post to see all kind of Categories and make yourself up-to-date</p>
+                  <div class="input-group mt-5 mb-3">
+                     <input type="text" class="form-control text-primary" placeholder="Email Address" aria-label="Email Address" aria-describedby="email-button">
+                     <div class="input-group-append">
+                        <span class="input-group-text bg-primary text-white" id="email-button">Subscribe</span>
+                     </div>
+                  </div>
+               </div>
+               <hr class="clearfix w-100 d-md-none">
+               <div class="col-md-2 mx-auto">
+                  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Creator</h5>
+                  <ul class="list-unstyled">
+                     <li class="mb-3">
+                        <a href="#!">9428332109</a>
+                     </li>
+                     <li class="mb-3">
+                        <a href="#!">jaykumardiu@gmail.com</a>
+                     </li>
+                     <li class="mb-3">
+                        <a href="#!">FIND AN ADDRESS</a>
+                     </li>
+                  </ul>
+               </div>
+               <hr class="clearfix w-100 d-md-none">
+               <div class="col-md-2 mx-auto">
+                  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Your Activity</h5>
+                  <ul class="list-unstyled text-uppercase ">
+                     <li class="mb-3">
+                        <a href="#!">Categories</a>
+                     </li>
+                     <li class="mb-3">
+                        <a href="#!">Watch Later</a>
+                     </li>
+                     <li class="mb-3">
+                        <a href="#!">Saved</a>
+                     </li>
+                     <li class="mb-3">
+                        <a href="#!">Downloads</a>
+                     </li>
+                     <li class="mb-3">
+                        <a href="#!">Know More</a>
+                     </li>
+                  </ul>
+               </div>
+               <hr class="clearfix w-100 d-md-none">
+               <div class="col-md-2 mx-auto">
+                  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About MyBlog</h5>
+                  <ul class="list-unstyled">
+                     <li class="mb-3" style="font: 22px  bold;">
+                        <a href="#!">Work With Us</a>
+                     </li>
+                     <li class="mb-3" style="font: 22px  bold;">
+                        <a href="#!">Privacy Policy</a>
+                     </li>
+                     <li class="mb-3" style="font: 22px  bold;">
+                        <a href="#!">Terms & Conditions</a>
+                     </li>
+                     <li class="mb-3" style="font: 22px  bold;">
+                        <a href="#!">Press Enquiries</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="bg-dark">
+            <ul class="list-unstyled list-inline text-center py-2 ">
+               <li  class="list-inline-item">
+                  <h5 class="mb-1">Register for free</h5>
+               </li>
+               <li class="list-inline-item">
+                  <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+               </li>
+            </ul>
+            <hr>
+            <ul class="list-unstyled list-inline text-center">
+               <li class="list-inline-item">
+                  <a class="btn-floating btn-fb mx-1">
+                  <i class="fab fa-facebook-f"> </i>
+                  </a>
+               </li>
+               <li class="list-inline-item">
+                  <a class="btn-floating btn-tw mx-1">
+                  <i class="fab fa-twitter"> </i>
+                  </a>
+               </li>
+               <li class="list-inline-item">
+                  <a class="btn-floating btn-gplus mx-1">
+                  <i class="fab fa-google-plus-g"> </i>
+                  </a>
+               </li>
+               <li class="list-inline-item">
+                  <a class="btn-floating btn-li mx-1">
+                  <i class="fab fa-linkedin-in"> </i>
+                  </a>
+               </li>
+               <li class="list-inline-item">
+                  <a class="btn-floating btn-dribbble mx-1">
+                  <i class="fab fa-dribbble"> </i>
+                  </a>
+               </li>
+            </ul>
+            <div class="footer-copyright text-center text-primary py-3">
+               <h3>Created By : 
+                  <a href="#" class="text-primary ">JayBamania </a>
+               </h3>
+            </div>
+         </div>
+      </footer>
+      <script type="text/javascript">
+         $(document).ready(function(){
+              openLoginModal();
+          });
+      </script>
+      <script src="index.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   </body>
 </html>
