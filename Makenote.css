@@ -1,0 +1,38 @@
+.button{
+    background-color: white!important;
+    color:orange!important;
+    float: right;
+    border-radius: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+    border:none;
+    font-size: 35px;
+    background-origin: shadow 3%;
+    margin-top: -20px;
+    height:40px;
+    width:40px;
+    padding: 3px;
+}
+.button h1{
+    margin-top: -10px;
+}
+.button:hover{
+    background-color: orange!important;
+    color:white!important;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color: red; */
+    color: white;
+    text-align: center;
+}
+.focus{
+    width:100%;
+}
+.focus:focus{
+    outline:none;
+    
+}
